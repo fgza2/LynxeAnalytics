@@ -2,9 +2,7 @@ if not game:IsLoaded() then game.Loaded:Wait() end
 
 local player = game.Players.LocalPlayer
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/fgza2/LynxeUI/refs/heads/main/Lynxe.Main"))()
-
-local options = library.options
-local tree = library.tree
+local options, tree = ...
 
 task.wait()
 
