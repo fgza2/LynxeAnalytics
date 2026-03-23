@@ -1,8 +1,10 @@
-if not game:IsLoaded() then repeat task.wait() until game:IsLoaded() end
+if not game:IsLoaded() then game.Loaded:Wait() end
 
 local player = game.Players.LocalPlayer
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/fgza2/LynxeUI/refs/heads/main/Lynxe.Main"))()
-local options = library.MainOptions
+
+local options = library.options
+local tree = library.tree
 
 task.wait(0.5)
 
@@ -34,7 +36,7 @@ task.spawn(function()
 	
 	local displayTime
 	
-	if not library.tree.ClockMode then
+	if not tree.ClockMode then
 		displayTime = string.format("%02d:%02d:%02d", lH, lM, lS)
 	else
 		local period, h12 = "AM", lH
