@@ -1,6 +1,10 @@
+if not game:IsLoaded() then repeat task.wait() until game:IsLoaded() end
+
 local player = game.Players.LocalPlayer
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/fgza2/LynxeUI/refs/heads/main/Lynxe.Main"))()
 local options = library.MainOptions
+
+task.wait(0.5)
 
 task.spawn(function()
 	local TZ = {
