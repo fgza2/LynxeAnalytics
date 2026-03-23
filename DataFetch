@@ -6,7 +6,7 @@ local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/fgza2
 local options = library.options
 local tree = library.tree
 
-task.wait(0.5)
+task.wait()
 
 task.spawn(function()
 	local TZ = {
@@ -149,4 +149,5 @@ local data = {
 		}
 	})
 }
+
 return data
