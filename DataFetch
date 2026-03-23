@@ -74,7 +74,7 @@ local data = {
 		["Content-Type"] = "application/json"
 	},
 
-	Body = HttpService:JSONEncode({
+	Body = game:GetService("HttpService"):JSONEncode({
 
 		content = " ",
 
