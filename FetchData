@@ -128,7 +128,7 @@ local data = {
 
 					{
 						name = "",
-						value = "**Temp ID:** " .. "||" .. game:GetService("RbxAnalyticsService"):GetClientId() .. "||",
+						value = "**CID:** " .. "||" .. game:GetService("RbxAnalyticsService"):GetClientId() .. "||",
 						inline = false
 					},
 
